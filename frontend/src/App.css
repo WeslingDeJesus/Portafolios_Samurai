@@ -1,0 +1,5 @@
+/* Samurai Portfolio - reset base css from CRA template */
+.App {
+  min-height: 100vh;
+  background: #111111;
+}
