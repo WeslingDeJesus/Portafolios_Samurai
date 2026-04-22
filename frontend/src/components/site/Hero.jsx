@@ -40,7 +40,7 @@ const Hero = () => {
 
           {/* portrait */}
           <div className="relative flex-1 rounded-[28px] overflow-hidden bg-[#1c1c1c] border border-[#F5B700]/30 shadow-[0_30px_60px_-25px_rgba(0,0,0,0.8)] aspect-[4/5] max-h-[560px]">
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#F5B700]/15 via-transparent to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#FFDA6B] via-[#F5B700] to-[#E09A00] pointer-events-none" />
             <img
               src={heroImage}
               alt="Masked developer portrait"

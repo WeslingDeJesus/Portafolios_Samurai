@@ -1,5 +1,7 @@
 // Mock data for the Samurai Portfolio - Wesling De Jesús
 // Replace this data with real content or connect to a backend later.
+import heroImagePNG from "../assets/MitzuPortafoliosSamurai (2).png";
+import aboutImagePNG from "../assets/MitzuPortafoliosSamurai 02.png";
 
 export const personal = {
   name: "Wesling De Jesús",
@@ -88,7 +90,5 @@ export const projects = [
   },
 ];
 
-export const heroImage =
-  "https://images.pexels.com/photos/12461383/pexels-photo-12461383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
-export const aboutImage =
-  "https://images.pexels.com/photos/36100645/pexels-photo-36100645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+export const heroImage = heroImagePNG;
+export const aboutImage = aboutImagePNG;
