@@ -1,6 +1,6 @@
 import React from "react";
 import { Download } from "lucide-react";
-import { CloudGlyph, OceanWave, SeigaihaPattern } from "./WaveDecor";
+import { CloudGlyph, SeigaihaPattern } from "./WaveDecor";
 import { personal, aboutImage } from "../../data/mock";
 
 const About = () => {
@@ -33,7 +33,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-28 px-6 md:px-10 bg-[#111111] overflow-hidden"
+      className="relative py-28 px-6 md:px-10 overflow-hidden"
     >
       <SeigaihaPattern className="absolute top-0 left-[-60px] w-[340px] h-[180px] opacity-15" color="#F5B700" />
 
@@ -101,7 +101,7 @@ const About = () => {
         </div>
       </div>
 
-      <OceanWave className="absolute -bottom-6 -left-8 w-[320px] md:w-[420px] opacity-90 pointer-events-none" flip />
+      {/* lateral decorations handled globally by ParallaxClouds */}
     </section>
   );
 };

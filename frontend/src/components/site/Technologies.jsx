@@ -1,5 +1,5 @@
 import React from "react";
-import { DiagonalStripes, OceanWave, SeigaihaPattern } from "./WaveDecor";
+import { DiagonalStripes, SeigaihaPattern } from "./WaveDecor";
 import { technologies } from "../../data/mock";
 
 // Tech logos (inline SVGs to avoid extra dependencies).
@@ -63,7 +63,7 @@ const Technologies = () => {
   return (
     <section
       id="tech"
-      className="relative py-24 px-6 md:px-10 bg-[#111111] overflow-hidden"
+      className="relative py-24 px-6 md:px-10 overflow-hidden"
     >
       <SeigaihaPattern className="absolute top-10 right-[-80px] w-[360px] h-[180px] opacity-15" />
 
@@ -112,8 +112,7 @@ const Technologies = () => {
         </div>
       </div>
 
-      <OceanWave className="absolute -bottom-8 -right-10 w-[320px] md:w-[420px] opacity-90 pointer-events-none" />
-      <OceanWave className="absolute -bottom-8 -left-10 w-[260px] md:w-[340px] opacity-80 pointer-events-none" flip />
+      {/* lateral ocean waves replaced by ParallaxClouds (global) */}
     </section>
   );
 };

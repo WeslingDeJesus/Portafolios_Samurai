@@ -1,5 +1,5 @@
 import React from "react";
-import { CloudGlyph, OceanWave, SeigaihaPattern } from "./WaveDecor";
+import { CloudGlyph, SeigaihaPattern } from "./WaveDecor";
 import { personal, heroImage } from "../../data/mock";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-32 pb-20 px-6 md:px-10 overflow-hidden bg-[#111111]"
+      className="relative min-h-screen pt-32 pb-20 px-6 md:px-10 overflow-hidden"
     >
       {/* subtle seigaiha top-right */}
       <SeigaihaPattern
@@ -95,8 +95,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* bottom right wave */}
-      <OceanWave className="absolute -bottom-4 -right-10 w-[360px] md:w-[480px] opacity-90 pointer-events-none" />
+      {/* bottom right wave - replaced by global ParallaxClouds */}
     </section>
   );
 };

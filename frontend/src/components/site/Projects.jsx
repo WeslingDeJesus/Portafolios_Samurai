@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight, ShoppingBag, Github, Linkedin, Twitter, Facebook } from "lucide-react";
 import { projects } from "../../data/mock";
-import { OceanWave, SeigaihaPattern } from "./WaveDecor";
+import { SeigaihaPattern } from "./WaveDecor";
 
 // Small inline "preview" renderers so the cards feel alive.
 const ProjectPreview = ({ type }) => {
@@ -139,7 +139,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative py-28 px-6 md:px-10 bg-[#111111] overflow-hidden"
+      className="relative py-28 px-6 md:px-10 overflow-hidden"
     >
       <SeigaihaPattern className="absolute top-10 left-[-60px] w-[320px] h-[160px] opacity-15" />
 
@@ -209,7 +209,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <OceanWave className="absolute -bottom-8 right-[-40px] w-[320px] md:w-[400px] opacity-90 pointer-events-none" />
+      {/* lateral decorations handled globally by ParallaxClouds */}
     </section>
   );
 };

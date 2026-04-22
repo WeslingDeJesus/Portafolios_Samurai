@@ -10,11 +10,13 @@ import Technologies from "./components/site/Technologies";
 import Projects from "./components/site/Projects";
 import Contact from "./components/site/Contact";
 import Footer from "./components/site/Footer";
+import ParallaxClouds from "./components/site/ParallaxClouds";
 
 const HomePage = () => (
-  <div className="bg-[#111111] text-[#F5EFD6] min-h-screen font-body selection:bg-[#F5B700] selection:text-[#1A1A1A]">
+  <div className="relative bg-[#111111] text-[#F5EFD6] min-h-screen font-body selection:bg-[#F5B700] selection:text-[#1A1A1A] overflow-x-hidden">
+    <ParallaxClouds />
     <Navbar />
-    <main>
+    <main className="relative z-10">
       <Hero />
       <About />
       <Technologies />

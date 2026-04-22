@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useToast } from "../../hooks/use-toast";
-import { OceanWave, SeigaihaPattern } from "./WaveDecor";
+import { SeigaihaPattern } from "./WaveDecor";
 import { personal } from "../../data/mock";
 
 const fields = [
@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-28 px-6 md:px-10 bg-[#111111] overflow-hidden"
+      className="relative py-28 px-6 md:px-10 overflow-hidden"
     >
       <SeigaihaPattern className="absolute top-10 right-[-80px] w-[360px] h-[180px] opacity-15" />
 
@@ -118,8 +118,7 @@ const Contact = () => {
         </div>
       </form>
 
-      <OceanWave className="absolute -bottom-8 -right-10 w-[320px] md:w-[420px] opacity-90 pointer-events-none" />
-      <OceanWave className="absolute -bottom-8 -left-10 w-[260px] md:w-[340px] opacity-80 pointer-events-none" flip />
+      {/* lateral ocean waves replaced by ParallaxClouds (global) */}
     </section>
   );
 };
