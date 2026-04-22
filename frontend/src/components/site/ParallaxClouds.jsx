@@ -64,10 +64,10 @@ const ParallaxClouds = () => {
         alt=""
         className="absolute select-none will-change-transform"
         style={{
-          left: "-60px",
-          bottom: "-40px",
-          width: "clamp(280px, 28vw, 520px)",
-          opacity: 0.55,
+          left: "-240px",
+          bottom: "-160px",
+          width: "clamp(1120px, 112vw, 2080px)",
+          opacity: 0.45,
           filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.35))",
           transition: "opacity 400ms ease",
         }}
@@ -80,10 +80,10 @@ const ParallaxClouds = () => {
         alt=""
         className="absolute select-none will-change-transform"
         style={{
-          right: "-80px",
-          top: "-40px",
-          width: "clamp(300px, 30vw, 560px)",
-          opacity: 0.5,
+          right: "-320px",
+          top: "-160px",
+          width: "clamp(1200px, 120vw, 2240px)",
+          opacity: 0.4,
           filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.35))",
           transition: "opacity 400ms ease",
         }}
